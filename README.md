@@ -15,8 +15,11 @@ options:
   -d D        date in YYYY-MM-DD , for a single day conversion
   -l L        csv file for input with a list of dates, YYYY-MM-DD
   -j J        json file to save output
+  -p P        path for both the input and output files
 
 the input csv should be a list of dates YYYY-MM-DD. The program will need an api key, which can be
 obtained from api.currencylayer.com .
 
 running the program with no options will retrieve USD-AUD conversion for today, and output to the screen
+sample run command 
+  python exchangeratesAPI.py -d '2021-07-01' -j 'AUDUSD-2021jul01'
